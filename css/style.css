@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+/* RESETS */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+/* MENU */
+.navbar {
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+	top: 0;
+	left: 0;
+	height: 80px;
+	box-sizing: border-box;
+	transition: .3s;
+}
+
+.navbar.black {
+	background-color: black !important;
+	height: 60px;
+	padding: 10px 50px;
+}
+
+
+ /* LOGO */
+.navbar .logo {
+	float: left;
+}
+
+.navbar .logo img {
+	height: 60px;
+	transition: .5s;
+	margin-left: 20%;
+}
+
+.navbar.black .logo img {
+	height: 60px;
+}
+
+/* ITENS DO MENU */
+.navbar ul, .sidenav ul {
+	list-style: none;
+	width: auto;
+	margin: 0 auto;
+}
+
+.navbar ul li, .sidenav ul li {
+	list-style: none;
+}
+
+.navbar ul li a, .sidenav ul li a {
+	line-height: 20px;
+	color: #262626;
+	padding: 5px 30px;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .5s;
+	margin: 0 15px;
+}
+
+.sidenav ul{
+	margin-top: 40px;	
+}
+
+.sidenav ul li {
+	margin: 5px 0;
+}
+
+.sidenav ul li a{
+	padding-left: 30px !important;
+}
+
+.navbar.black ul li a, .sidenav.black ul li a {
+	color: #F9F1F0;
+	margin: 0 25px;
+}
+
+.navbar ul li a.active, .navbar ul li a:hover, .sidenav ul li a.active {
+	color: #F9F1F0;
+	background: #27ABA0;
+}
+.navbar .nav-cha.active, .navbar .nav-cha:hover, .sidenav .nav-cha.active {
+	color: #F9F1F0;
+	background: #B76E79;
+}
+
+/* IMAGEM / TEXTO 2 */
+div.sec2 {
+	max-width: 80%;
+	border:auto;
+	margin: 50px;
+}
+div.coluna {
+	border: 5px;
+}
+/* TODOS OS TEXTOS */
+div.content {
+	
+	padding: 100px;
+}
+.gradientCont{
+	background: linear-gradient(135deg, rgba(24, 165, 88, 0.6) 15%, rgba(117, 230, 218, 0.4) 100%);
+	padding: 100px;
+}
+
+div.content h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 2em;
+}
+
+div.content P {
+	margin: 20px 0 0;
+	padding: 0;
+	font-size: 1.1em;
+}
+.divisor{
+    flex: 1;
+    margin: 10px;
+}
+body{margin-top:20px;}
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #27ABA0;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #27ABA0;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+    }
+}
+
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #29A0B1;
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color:#98D7C2;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
+div.position{
+	display: value;
+	margin: 100px auto;	
+	
+}
+.galeria img{
+	width: 100px;
+	height: 450px;
+	object-fit: cover;
+}
+.centralize-flex{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+/* .imagem{
+	width: 50%;
+	height: 50%;
+	object-fit: cover;
+} */
+
+.sec-casamento{
+	width: 100%;
+	height: 400px;
+}
+
+.sec-casamento img{
+	object-fit: cover;
+	width: 100%;
+	height: 500px;
+}
+
+.capa{
+	width: 100%;
+}
+
+.formulario-iframe{
+	width: 100%;
+	min-width: 340px;
+	height: 2600px;
+	
+}
+
+.sidenav-sombra{
+	position: fixed;
+	width: 100vw; 
+	height: 100vh; 
+	background-color: rgba(0, 0, 0, 0.3); 
+	z-index: 5000;
+}
+
+.sidenav{
+	position: fixed; 
+	width: 50%; 
+	min-width: 330px; 
+	height: 100vh; 
+	z-index: 5001; 
+	background-color: #ffffff; 
+	right: 0;
+}
